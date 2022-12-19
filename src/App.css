@@ -1,13 +1,12 @@
 .app {
   height: 100vh;
-  margin:auto;
+  margin: auto;
   font-family: 'Raleway', sans-serif;
   background-color: #9ccef4;
 }
 
-/* .app__header,
+.app__header,
 .app__main {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,11 +14,11 @@
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}  */
+} 
 
 /*  Search bar */
 
-header{
+header {
   background-color: #759eda;
   width: auto;
   height: 50px;
@@ -27,11 +26,11 @@ header{
   display: flex;
 }
 
-form{
+form {
   display: flex;
 }
 
-.search{
+.search {
   display: flex;
   width: 12rem;
   height: 47px;
@@ -42,17 +41,17 @@ form{
   outline: none;
 }
 
-.search::placeholder{
+.search::placeholder {
   color: white;
   opacity: 50%;
   font-size: larger;
 }
 
-.search:focus{
+.search:focus {
   border-bottom: 1px solid #5879c7;
 }
 
-button{
+button {
   background-color: #5879c7;
   border: none;
   font-size: larger;
@@ -64,34 +63,30 @@ button{
 
 /* Current weather */
 
-main{
-  margin-top: 3rem;
-}
-
-figure{
+figure {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-figcaption{
+figcaption {
   color: white;
   font-size: 30px;
   font-weight: bold;
   margin: 1rem;
 }
 
-.describeTemp{
+.describeTemp {
   text-align: center;
   font-size: 30px;
 }
 
-.describeTemp span{
+.describeTemp span {
   font-weight: bold;
   padding-right: 15px;
 }
 
-.dayDetails{ 
+.dayDetails {
   display: flex;
   flex-wrap: wrap;
   background-color: #9CCEF4;
@@ -99,7 +94,7 @@ figcaption{
   justify-content: center;
 }
 
-article{
+article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,32 +102,40 @@ article{
   font-size: 22px;
 }
 
-article img{
+article img {
   padding: 2rem 0;
 }
 
 @media (max-width: 500px) {
-  button{
+  button {
     font-size: 10px;
     padding: 1rem 1rem;
   }
 }
+
 @media (max-width: 1800px) {
-  .dayDetails{
+  .dayDetails {
     flex-wrap: wrap;
     margin: 0;
   }
 }
 
 @media (max-width: 335px) {
-  form{
+  form {
     flex-wrap: wrap;
   }
 
-  header{
+  header {
     height: 100px;
   }
-  button{
+
+  button {
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .describeTemp div p {
+    margin-bottom: 0;
   }
 }
